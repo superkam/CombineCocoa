@@ -51,6 +51,7 @@ public extension UIPanGestureRecognizer {
     }
 }
 
+#if os(iOS)
 @available(iOS 13.0, *)
 public extension UIScreenEdgePanGestureRecognizer {
     /// A publisher which emits when this Screen Edge Gesture Recognizer is triggered
@@ -58,6 +59,7 @@ public extension UIScreenEdgePanGestureRecognizer {
         gesturePublisher(for: self)
     }
 }
+#endif
 
 @available(iOS 13.0, *)
 public extension UILongPressGestureRecognizer {
